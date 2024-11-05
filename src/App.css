@@ -1,0 +1,10 @@
+
+.App {
+  width: 2000px;
+  height: 1000px;
+  background-size: cover;
+  background: url(assets/back.png) lightgray -306px -505px / 128.073% 212.005% no-repeat;
+  display: flex;
+  justify-content: center;
+
+}

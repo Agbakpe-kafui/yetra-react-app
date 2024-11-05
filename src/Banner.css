@@ -1,0 +1,102 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height based on preference */
+    background-image: url('./assets/banner.jpg'); /* Path to your image */
+    background: linear-gradient(270deg, rgba(0, 20, 91, 0.50) 0%, rgba(0, 17, 88, 0.82) 50%, #030A31 100%), url(./assets/banner.jpg) lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+  }
+  
+  .banner-content {
+    padding-left: 5%; /* Space from the left edge */
+    max-width: 50%; /* Restrict width to half of the banner */
+    width: 25em;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .banner-content p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  
+.banner-overlay-images {
+    max-width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* This will be the container for overlapping images */
+  }
+  
+  .banner-overlay-images img {
+    position: absolute;
+    /* Add styles for each overlapping image here */
+    /* Example positioning and sizing for overlapping images */
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+    margin-left: 50em;
+  }
+
+
+
+  /**************/
+  .overlap-images {
+    position: relative;
+    width: 450px; /* Set container size or adjust as needed */
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .overlap-images img {
+    position: absolute;
+    width: 60%; /* Adjust size of images */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  /* Position images to overlap with slight offset */
+  .overlap-images img:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: translate(-20%, -20%);
+  }
+  
+  .overlap-images img:nth-child(2) {
+    top: 0;
+    right: 0;
+    transform: translate(20%, -20%);
+  }
+  
+  .overlap-images img:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform: translate(-20%, 20%);
+  }
+  
+  .overlap-images img:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 20%);
+  }
+  
+  /* Optional hover effect */
+  .overlap-images img:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
