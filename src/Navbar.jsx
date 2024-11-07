@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar bg-blue-600 p-4 flex justify-between items-center">
       <div className="navbar-logo">
       <img src={logo} alt="Logo" className="logo-image" />
       </div>
