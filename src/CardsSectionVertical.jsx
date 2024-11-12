@@ -1,82 +1,79 @@
 import React from 'react';
-import './CardsSectionVertical.css';
 import logo from './assets/skull.svg';
-import logo2 from './assets/matches.svg' // Adjust the path to your logo
-import cardImage1 from './assets/gta.jpg'; // Adjust the path to your card images
+import logo2 from './assets/matches.svg';
+import cardImage1 from './assets/gta.jpg';
 import cardImage2 from './assets/spider.jpg';
 import twitch from './assets/twitch.png';
 import logo3 from './assets/logo2.svg';
 
 const CardsSectionVertical = () => {
   return (
-    <section className="cards-section-vertical">
-      <h2>Update to Date News / Matches:</h2>
+    <section className="p-8 text-white">
+      <h2 className="text-4xl mb-8 font-bold text-left">Update to Date News / Matches:</h2>
 
-      <div className="vertical-card">
-        <div className='logos'>
-            <img src={logo} alt="Logo" className="card-logo" />
-            <p>Skull Crasher</p>
+      <div className="flex flex-col md:flex-row items-center md:items-start bg-customGray rounded-lg shadow-lg p-4 mb-8 md:h-[10em] w-full md:w-auto h-[32em]">
+        <div className="flex flex-col items-center space-x-4 mb-4 md:mb-0">
+          <img src={logo} alt="Logo" className="w-15 h-15" />
+          <p className='text-center'>Skull Crasher</p>
         </div>
-        <h1>vs</h1>
-        <div className='logos'>
-            <img src={logo2} alt="Logo" className="card-logo" />
-            <p>Rage Rush</p>
+        <h1 className="text-2xl mx-4">vs</h1>
+        <div className="flex flex-col items-center space-x-4 mb-4 md:mb-0">
+          <img src={logo2} alt="Logo" className="w-15 h-15" />
+          <p>Rage Rush</p>
         </div>
-        <div className="card-content">
-          <h3>COD BATTLE ROYALE </h3>
-          <p>JULY,20TH 2024</p>
+        <div className="flex-1 text-center md:text-left pl-[10em] pt-6 px-4">
+          <h3 className="text-xl ">COD BATTLE ROYALE</h3>
+          <p className="text-gray-400">JULY, 20TH 2024</p>
         </div>
-        <div className="logos">
-            <img src={twitch} alt="Service One" className="" />
-            <p>Twitch Streaming</p>
+        <div className="flex flex-col items-center space-x-2">
+          <img src={twitch} alt="Twitch Streaming" className="w-15 h-15" />
+          <p>Twitch Streaming</p>
         </div>
       </div>
       
-      <div className="vertical-card">
-        <img src={cardImage1} alt="Service Two" className="card-image" />
-        <div className="card-content">
-          <h3>Service Two</h3>
-          <p>Discover the benefits of this service and how it can support your goals effectively.</p>
+      <div className="flex flex-col md:flex-row items-center md:items-start bg-customGray rounded-lg shadow-lg p-4 mb-8 md:h-[10em] w-full md:w-auto h-[25em]">
+        <img src={cardImage1} alt="Service Two" className="w-full md:w-[20em] h-[8em] rounded-lg mb-4 md:mb-0 md:mr-8" />
+        <div className="flex-1 text-center md:text-left pl-[5em] pt-6 px-4">
+          <h3 className="text-xl">Service Two</h3>
+          <p className="text-gray-400">Discover the benefits of this service and how it can support your goals effectively.</p>
         </div>
-        <div className='logos'>
-            <img src={logo3} alt="Logo" className="card-logo" />
-            <p>Read More</p>
-        </div>
-      </div>
-
-      <div className="vertical-card">
-        <div className='logos'>
-            <img src={logo2} alt="Logo" className="card-logo" />
-            <p>Skull Crasher</p>
-        </div>
-        <h1>vs</h1>
-        <div className='logos'>
-            <img src={logo} alt="Logo" className="card-logo" />
-            <p>Rage Rush</p>
-        </div>
-        <div className="card-content">
-          <h3>COD BATTLE ROYALE </h3>
-          <p>JULY,20TH 2024</p>
-        </div>
-        <div className="card-image">
-            <img src={twitch} alt="Service One" className="" />
-            <p>Twitch Streaming</p>
+        <div className="flex flex-col items-center space-x-2 mt-4 md:mt-0">
+          <img src={logo3} alt="Logo" className="w-15 h-15" />
+          <p>Read More</p>
         </div>
       </div>
 
-      <div className="vertical-card">
-        <img src={cardImage2} alt="Service Two" className="card-image" />
-        <div className="card-content">
-          <h3>Service Two</h3>
-          <p>Discover the benefits of this service and how it can support your goals effectively.</p>
+      <div className="flex flex-col md:flex-row items-center md:items-start bg-customGray rounded-lg shadow-lg p-4 mb-8 md:h-[10em] w-full md:w-auto h-[32em]">
+        <div className="flex flex-col items-center space-x-4 mb-4 md:mb-0">
+          <img src={logo2} alt="Logo" className="w-15 h-15" />
+          <p>Skull Crasher</p>
         </div>
-        <div className='logos'>
-            <img src={logo3} alt="Logo" className="card-logo" />
-            <p>Read More</p>
+        <h1 className="text-2xl mx-4">vs</h1>
+        <div className="flex flex-col items-center space-x-4 mb-4 md:mb-0">
+          <img src={logo} alt="Logo" className="w-15 h-15" />
+          <p>Rage Rush</p>
+        </div>
+        <div className="flex-1 text-center md:text-left pl-[10em] pt-6 px-4">
+          <h3 className="text-xl">COD BATTLE ROYALE</h3>
+          <p className="text-gray-400">JULY, 20TH 2024</p>
+        </div>
+        <div className="flex flex-col items-center space-x-2">
+          <img src={twitch} alt="Twitch Streaming" className="w-15 h-15" />
+          <p>Twitch Streaming</p>
         </div>
       </div>
 
-
+      <div className="flex flex-col md:flex-row items-center md:items-start bg-customGray rounded-lg shadow-lg p-4 mb-8 md:h-[10em] w-full md:w-auto h-[25em]">
+        <img src={cardImage2} alt="Service Two" className="w-full md:w-[20em] h-[8em] rounded-lg mb-4 md:mb-0 md:mr-8" />
+        <div className="flex-1 text-center md:text-left pl-[5em] pt-6 px-4">
+          <h3 className="text-xl">Service Two</h3>
+          <p className="text-gray-400">Discover the benefits of this service and how it can support your goals effectively.</p>
+        </div>
+        <div className="flex flex-col items-center space-x-2 mt-4 md:mt-0">
+          <img src={logo3} alt="Logo" className="w-15 h-15" />
+          <p>Read More</p>
+        </div>
+      </div>
     </section>
   );
 };

@@ -11,15 +11,15 @@ import End from './End';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Banner />
-      <CardsSection />
+    <div className="App bg-customBlack ">
+      <Navbar  />
+      <Banner   />
+      <CardsSection  />
       <InfoSection />
       <CardsSectionVertical />
       <SocialGallerySection />
       <End />
-      <Footer />
+      <Footer  />
       {/* Other components here */}
     </div>
   );
